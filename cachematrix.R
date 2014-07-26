@@ -48,3 +48,5 @@ amatrix$set(matrix(c(0,5,99,66), nrow=2, ncol=2)) # Modify existing matrix
 cacheSolve(amatrix)   # Computes, caches, and returns new matrix inverse
 amatrix$get()         # Returns matrix
 amatrix$getinverse()  # Returns matrix inverse
+
+round(amatrix$get()%*%amatrix$getinverse())
